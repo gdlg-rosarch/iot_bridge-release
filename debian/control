@@ -1,0 +1,13 @@
+Source: ros-kinetic-iot-bridge
+Section: misc
+Priority: extra
+Maintainer: mike <corb@aol.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-diagnostic-msgs, ros-kinetic-rostest
+Homepage: http://wiki.ros.org/iot_bridge
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-iot-bridge
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-requests, ros-kinetic-diagnostic-msgs, ros-kinetic-rospy, ros-kinetic-rostopic
+Description: The iot_bridge provides a bi-directional bridge between ROS and the OpenHAB Home Automation system.
+ This allows a ROS robot to connect to a vast variety of IoT devices such as motion detectors, Z-Wave devices, lighting, door locks, etc.
